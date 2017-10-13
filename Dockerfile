@@ -6,4 +6,6 @@ COPY . .
 RUN go build .
 RUN chmod +x registry-sample
 
-CMD ["/go/src/registry-sample"]
+EXPOSE 5000
+
+CMD ["./registry-sample"]
